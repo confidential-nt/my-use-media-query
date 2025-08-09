@@ -63,6 +63,7 @@ export default function useMediaQuery(input: MediaQueryInput): boolean {
 
   useEffect(() => {
     console.log(`Media query: ${query}`);
+    console.log(`Matches: ${matches}`);
     const mediaQuery = window.matchMedia(query);
     const handler = (event: MediaQueryListEvent) => setMatches(event.matches);
 
